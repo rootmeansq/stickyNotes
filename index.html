@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Sticky Notes</title>
+  </head>
+
+  <body>
+      <div>
+          <button class="create-button" >Create Note</button>
+      </div>
+      <div class="form-section">
+          <form onsubmit="return false;"> <!--this is to make sure that the form value is not deleted post submission -->
+            <input type="text" maxlength="96" class="input-text" >
+            <div class="submit-delete">
+              <button>
+                <i class="fas fa-check-circle"></i>
+              </button>
+              <button>
+                <i class="fas fa-minus-circle" id="close-button"></i>
+              </button>
+            </div>
+          </form>
+      </div>
+      
+      <div class="container">
+        
+      </div>
+      
+  </body>
+  <script src="./app.js"></script>
+</html>
